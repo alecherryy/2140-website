@@ -94,7 +94,7 @@ export const Header = ({ logo, items, donate }: Props) => {
   return (
     <header
       ref={ref}
-      className="text-black absolute w-full z-99 overflow-hidden"
+      className="text-black absolute w-full z-99 overflow-x-hidden"
     >
       <Container
         size="lg"
