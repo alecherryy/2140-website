@@ -126,7 +126,7 @@ const MenuIcon = ({
   isOpen: boolean
 }) => {
   return (
-    <div className="relative z-[5]">
+    <div className="relative z-5">
       <button
         className="bg-black rounded-full h-10 w-10 border-none cursor-pointer flex items-center justify-center"
         onClick={handleClick}
