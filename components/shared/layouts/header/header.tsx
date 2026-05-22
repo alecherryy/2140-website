@@ -54,6 +54,7 @@ export const Header = ({ logo, items, donate }: Props) => {
         div.style.transition = 'none'
         div.style.boxShadow = 'none'
         div.style.background = 'transparent'
+        div.style.overflow = 'hidden'
         setIsSticky(false)
       }
       // set isSticky to true if the user has scrolled more than 80px
@@ -63,6 +64,7 @@ export const Header = ({ logo, items, donate }: Props) => {
           div.style.position = 'fixed'
           div.style.transform = 'translateY(-100%)'
           div.style.background = '#fff'
+          div.style.overflow = 'visible'
 
           setTimeout(() => {
             div.style.transition = 'all 0.4s cubic-bezier(0.83, 0, 0.17, 1)'
@@ -94,7 +96,7 @@ export const Header = ({ logo, items, donate }: Props) => {
   return (
     <header
       ref={ref}
-      className="text-black absolute w-full z-99 overflow-x-hidden"
+      className="text-black absolute w-full z-99 overflow-hidden"
     >
       <Container
         size="lg"
