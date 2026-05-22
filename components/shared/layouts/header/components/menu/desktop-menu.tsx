@@ -1,9 +1,7 @@
 import Link from 'next/link'
-import { useState } from 'react'
 import { MenuProps } from './menu'
 import { usePathname } from 'next/navigation'
 import classNames from 'classnames'
-import Image from 'next/image'
 import { ExternalLink } from 'lucide-react'
 
 export const DesktopMenu = ({
